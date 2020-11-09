@@ -8,11 +8,9 @@ App = {
   },
   initWeb3: function() {
     if (typeof web3 !== 'undefined') {
-      // If a web3 instance is already provided by Meta Mask.
       App.web3Provider = web3.currentProvider;
       web3 = new Web3(web3.currentProvider);
     } else {
-      // Specify default instance if no web3 instance provided
       App.web3Provider = new Web3.providers.HttpProvider('http://localhost:7545');
       web3 = new Web3(App.web3Provider);
     }
@@ -22,9 +20,7 @@ App = {
 
   initContract: function() {
     $.getJSON("Election.json", function(election) {
-      // Instantiate a new truffle contract from the artifact
       App.contracts.Election = TruffleContract(election);
-      // Connect provider to interact with contract
       App.contracts.Election.setProvider(App.web3Provider);
 
       return App.render();
@@ -38,7 +34,6 @@ App = {
     loader.show();
     content.hide();
     table.hide();
-    // Load account data
     web3.eth.getCoinbase(function(err, account) {
     if (err === null) {
     App.account = account;
@@ -47,7 +42,6 @@ App = {
     });
 
 
-    // Load contract data
     App.contracts.Election.deployed().then(function(instance) {
     electionInstance = instance;
     return electionInstance.candidatesCount();
@@ -64,12 +58,10 @@ App = {
     var name = candidate[1];
     var voteCount = candidate[3];
 
-    // Render candidate Result
     var candidateTemplate = "<tr><th>" + avatar + "</th><th>" + id + "</th><td>" + name +
     "</td><td>" + voteCount  + "</td></tr>"
     candidatesResults.append(candidateTemplate);
-    // Render candidate ballot option
-    //var candidateOption = "<li><input type='checkbox'  value='" + id + "' >  " + name + "</li>"
+
     candidatesSelect.append("<div class='form-check'><input class='form-check-input' type='checkbox' value='' id= " + id + "> <label class='form-check-label' for=0>  "+ name +"  </label></div>");
     });
     }
@@ -92,22 +84,16 @@ App = {
 
 
 
-    // Checks whether a candidate is chosen or not.
-    // if it is, we get the Candidate's ID, which we will use
-    // when we call the vote function in Smart Contracts
+
     if ($("#candidatesSelect :checkbox:checked").length > 0){
-      // just takes the first checked box and gets its id
       var candidateId = $("#candidatesSelect :checkbox:checked")[0].id
     }
     else {
-      // print message if user didn't vote for candidate
      console.log('please select a condidate first')
       return
     }
-   // Actually voting for the Candidate using the Contract and displaying "Voted"
     App.contracts.Election.deployed().then(function(instance) {return instance.vote(candidateId, { from: App.account });
     }).then(function(result) {
-    // Wait for votes to update
     $("#content").hide();
     $("#loader").show();
     $("#table").show();
