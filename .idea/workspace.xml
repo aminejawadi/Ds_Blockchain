@@ -1,13 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="347c1e6b-58b5-4499-9b8d-a2a1f054d50a" name="Default Changelist" comment="" />
+    <list default="true" id="347c1e6b-58b5-4499-9b8d-a2a1f054d50a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/contracts/Election.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Election.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/contracts/Migrations.sol" beforeDir="false" afterPath="$PROJECT_DIR$/contracts/Migrations.sol" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/.gitkeep" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1k1jK3MdjYcrdjnCoqKWczcF9ad" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -15,6 +24,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -28,7 +38,7 @@
       <updated>1604874945676</updated>
       <workItem from="1604874947099" duration="2029000" />
       <workItem from="1604931550886" duration="1455000" />
-      <workItem from="1604933088928" duration="2126000" />
+      <workItem from="1604933088928" duration="2646000" />
     </task>
     <servers />
   </component>
@@ -36,10 +46,18 @@
     <option name="version" value="3" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="561" y="262" width="243" height="276" key="Github.ShareDialog" timestamp="1604935627860">
+    <state x="463" y="105" key="FileChooserDialogImpl" timestamp="1604935749819">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="561" y="262" width="243" height="276" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1604935627860" />
+    <state x="463" y="105" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1604935749819" />
+    <state x="561" y="262" width="243" height="276" key="Github.ShareDialog" timestamp="1604935791574">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="561" y="262" width="243" height="276" key="Github.ShareDialog/0.0.1366.728@0.0.1366.728" timestamp="1604935791574" />
+    <state x="504" y="62" key="Github.UntrackedFilesDialog" timestamp="1604935802438">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="504" y="62" key="Github.UntrackedFilesDialog/0.0.1366.728@0.0.1366.728" timestamp="1604935802438" />
     <state x="263" y="99" key="IDE.errors.dialog" timestamp="1604933138285">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -48,5 +66,9 @@
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="339" y="162" key="run.anything.popup/0.0.1366.728@0.0.1366.728" timestamp="1604933011721" />
+    <state x="497" y="50" key="svn.repositoryBrowser" timestamp="1604935663872">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="497" y="50" key="svn.repositoryBrowser/0.0.1366.728@0.0.1366.728" timestamp="1604935663872" />
   </component>
 </project>
